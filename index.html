@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SkillHub is a responsive online learning platform landing page built with HTML, CSS, and JavaScript." />
+  <title>SkillHub | Learn Skills That Move You Forward</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="home">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="SkillHub home">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>SkillHub</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="nav-menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme">🌙</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-gap">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Online learning for career-ready skills</p>
+          <h1>Learn skills that move you forward.</h1>
+          <p class="hero-text">
+            SkillHub helps beginners explore practical courses, follow a clear learning roadmap, and build project-ready confidence from any device.
+          </p>
+          <div class="hero-actions" aria-label="Hero actions">
+            <a class="btn btn-primary" href="#courses">Explore Courses</a>
+            <a class="btn btn-secondary" href="#contact">Ask for Guidance</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" aria-label="Learning dashboard preview">
+          <div class="dashboard-card">
+            <div class="dashboard-topline">
+              <span>Current Path</span>
+              <strong>Frontend Basics</strong>
+            </div>
+            <div class="progress-ring" aria-label="72 percent course progress">
+              <span>72%</span>
+            </div>
+            <div class="mini-lessons">
+              <article>
+                <span class="lesson-status complete" aria-hidden="true"></span>
+                <div>
+                  <h2>HTML Structure</h2>
+                  <p>Completed</p>
+                </div>
+              </article>
+              <article>
+                <span class="lesson-status active" aria-hidden="true"></span>
+                <div>
+                  <h2>Responsive CSS</h2>
+                  <p>In progress</p>
+                </div>
+              </article>
+              <article>
+                <span class="lesson-status" aria-hidden="true"></span>
+                <div>
+                  <h2>JavaScript Logic</h2>
+                  <p>Next lesson</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="SkillHub statistics">
+      <div class="container stats-grid">
+        <article>
+          <strong>4.8/5</strong>
+          <span>Learner rating</span>
+        </article>
+        <article>
+          <strong>18+</strong>
+          <span>Practical courses</span>
+        </article>
+        <article>
+          <strong>100%</strong>
+          <span>Mobile friendly</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-gap" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Why learners choose us</p>
+          <h2>Simple learning, real outcomes.</h2>
+          <p>Every feature is designed to help beginners move from confusion to clear, project-based progress.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="icon" aria-hidden="true">🧭</span>
+            <h3>Guided Roadmaps</h3>
+            <p>Follow step-by-step learning tracks so you always know what to study next.</p>
+          </article>
+          <article class="feature-card">
+            <span class="icon" aria-hidden="true">💻</span>
+            <h3>Project Practice</h3>
+            <p>Build real interfaces and portfolio pieces instead of only watching theory.</p>
+          </article>
+          <article class="feature-card">
+            <span class="icon" aria-hidden="true">🤝</span>
+            <h3>Beginner Support</h3>
+            <p>Ask questions, get direction, and learn with content made for new developers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-gap courses-section" id="courses">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Popular courses</p>
+            <h2>Choose your next skill.</h2>
+          </div>
+          <p>Filter by learning area and quickly compare beginner-friendly options.</p>
+        </div>
+
+        <div class="filter-controls" aria-label="Course filters">
+          <button class="filter-btn active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="code">Code</button>
+          <button class="filter-btn" type="button" data-filter="design">Design</button>
+          <button class="filter-btn" type="button" data-filter="career">Career</button>
+        </div>
+
+        <div class="course-grid" aria-live="polite">
+          <article class="course-card" data-category="code">
+            <div class="course-tag">Code</div>
+            <h3>HTML & Semantic Web</h3>
+            <p>Learn page structure, accessibility landmarks, and clean content hierarchy.</p>
+            <div class="course-meta">
+              <span>Beginner</span>
+              <span>3 weeks</span>
+            </div>
+          </article>
+
+          <article class="course-card" data-category="code">
+            <div class="course-tag">Code</div>
+            <h3>Responsive CSS Mastery</h3>
+            <p>Use Grid, Flexbox, clamp, and media queries to support every screen size.</p>
+            <div class="course-meta">
+              <span>Beginner</span>
+              <span>4 weeks</span>
+            </div>
+          </article>
+
+          <article class="course-card" data-category="design">
+            <div class="course-tag">Design</div>
+            <h3>UI Design Foundations</h3>
+            <p>Create warm, readable layouts with spacing, typography, and visual balance.</p>
+            <div class="course-meta">
+              <span>Starter</span>
+              <span>2 weeks</span>
+            </div>
+          </article>
+
+          <article class="course-card" data-category="career">
+            <div class="course-tag">Career</div>
+            <h3>Portfolio Launch Kit</h3>
+            <p>Turn your projects into a professional portfolio and prepare for interviews.</p>
+            <div class="course-meta">
+              <span>Practical</span>
+              <span>2 weeks</span>
+            </div>
+          </article>
+
+          <article class="course-card" data-category="code">
+            <div class="course-tag">Code</div>
+            <h3>JavaScript Interactions</h3>
+            <p>Add menus, filters, accordions, validation, and small state-driven features.</p>
+            <div class="course-meta">
+              <span>Beginner</span>
+              <span>3 weeks</span>
+            </div>
+          </article>
+
+          <article class="course-card" data-category="design">
+            <div class="course-tag">Design</div>
+            <h3>Wireframing for Web</h3>
+            <p>Plan layouts with low-fidelity wireframes before moving into visual design.</p>
+            <div class="course-meta">
+              <span>Starter</span>
+              <span>1 week</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-gap roadmap-section" id="roadmap">
+      <div class="container roadmap-grid">
+        <div class="section-heading roadmap-heading">
+          <p class="eyebrow">Learning roadmap</p>
+          <h2>From first lesson to first launch.</h2>
+          <p>SkillHub keeps your journey focused with clear milestones and practical projects.</p>
+        </div>
+
+        <div class="roadmap-list">
+          <article>
+            <span>01</span>
+            <h3>Discover</h3>
+            <p>Understand your goal and select the right learning track.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Practice</h3>
+            <p>Complete guided tasks and reinforce concepts with examples.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Build</h3>
+            <p>Create responsive projects that show your real skills.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Launch</h3>
+            <p>Publish your work and present it in your portfolio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-gap proof-section" aria-label="Learner proof and questions">
+      <div class="container proof-grid">
+        <article class="testimonial-card">
+          <p class="eyebrow">Learner story</p>
+          <blockquote>
+            “SkillHub gave me a simple roadmap. I finally understood how HTML, CSS, and JavaScript connect in real projects.”
+          </blockquote>
+          <div class="student">
+            <span aria-hidden="true">AK</span>
+            <div>
+              <strong>Aarav K.</strong>
+              <p>Frontend beginner</p>
+            </div>
+          </div>
+        </article>
+
+        <section class="faq-card" id="faq" aria-labelledby="faq-title">
+          <div class="section-heading small-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2 id="faq-title">Common questions</h2>
+          </div>
+
+          <div class="accordion">
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                Is SkillHub beginner friendly?
+                <span aria-hidden="true">+</span>
+              </button>
+              <p>Yes. The platform is designed around clear language, guided steps, and project-based learning.</p>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                Can I learn on mobile?
+                <span aria-hidden="true">+</span>
+              </button>
+              <p>Yes. The interface is responsive and adapts across mobile, tablet, and desktop screens.</p>
+            </article>
+            <article class="faq-item">
+              <button type="button" aria-expanded="false">
+                Do I need previous coding experience?
+                <span aria-hidden="true">+</span>
+              </button>
+              <p>No. You can start with HTML and gradually move into CSS layouts and JavaScript interactions.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section-gap contact-section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow">Start learning</p>
+          <h2>Need help choosing a course?</h2>
+          <p>Send a quick enquiry and we will suggest a beginner-friendly path based on your goal.</p>
+          <ul class="contact-points">
+            <li>Personal learning direction</li>
+            <li>Beginner roadmap suggestions</li>
+            <li>Portfolio project guidance</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" novalidate>
+          <div class="form-field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required minlength="2" />
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="course">Interested course</label>
+            <select id="course" name="course" required>
+              <option value="">Choose one</option>
+              <option value="html">HTML & Semantic Web</option>
+              <option value="css">Responsive CSS Mastery</option>
+              <option value="js">JavaScript Interactions</option>
+              <option value="portfolio">Portfolio Launch Kit</option>
+            </select>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Your goal</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us what you want to learn" required minlength="10"></textarea>
+            <small class="error-message"></small>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send Enquiry</button>
+          <p class="form-success" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#home" aria-label="SkillHub home">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span>SkillHub</span>
+        </a>
+        <p>Practical online learning for beginners who want to build real projects.</p>
+      </div>
+      <ul class="footer-links" aria-label="Footer navigation">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
