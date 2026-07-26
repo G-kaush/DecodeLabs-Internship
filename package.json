@@ -1,0 +1,12 @@
+{
+  "name": "skillhub-full-stack",
+  "version": "1.0.0",
+  "description": "SkillHub full-stack learning platform with a Node API and persistent file database.",
+  "main": "server/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js"
+  },
+  "dependencies": {}
+}
